@@ -1,0 +1,359 @@
+/* ===========================================================
+   🎨 GENEL SAYFA TASARIMI
+   =========================================================== */
+.create-conference {
+  background: #f9f7ff; /* açık mor ton, arka plan */
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  font-family: "Tinos", serif; /* yazı tipi */
+}
+
+/* ===========================================================
+   🏷️ GENEL BAŞLIKLAR
+   =========================================================== */
+h2 {
+  color: #5b3cc4;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+/* ===========================================================
+   📦 FORM BÖLÜMLERİ
+   =========================================================== */
+.form-section {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.form-section h3 {
+  color: #5b3cc4;
+  margin-bottom: 15px;
+  font-family: "Tinos", serif;
+}
+
+/* ===========================================================
+   🏷️ LABEL ve YARDIMCI METİNLER
+   =========================================================== */
+label {
+  font-weight: 600;
+  color: #4b0082;
+  margin-top: 10px;
+  display: block;
+  font-family: "Tinos", serif;
+}
+
+label .required,
+label span.required {
+  color: #d62828 !important;
+  font-weight: 700;
+  margin-left: 3px;
+}
+
+.hint,
+.small-hint {
+  font-size: 12px;
+  color: #777;
+  font-style: italic;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+/* ===========================================================
+   🧾 INPUT & TEXTAREA ALANLARI
+   =========================================================== */
+input,
+textarea {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 12px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: "Tinos", serif;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #8b5cf6;
+  box-shadow: 0 0 4px rgba(139, 92, 246, 0.3);
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* ===========================================================
+   🔘 BUTONLAR
+   =========================================================== */
+button {
+  background: linear-gradient(90deg, #8b5cf6, #c084fc);
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Tinos", serif;
+  transition: 0.3s;
+}
+
+button:hover {
+  box-shadow: 0 4px 10px rgba(139, 92, 246, 0.3);
+  opacity: 0.95;
+}
+
+.save-btn {
+  display: block;
+  margin: 30px auto 0 auto;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 25px;
+}
+
+/* ===========================================================
+   ⚠️ HATA KUTUSU
+   =========================================================== */
+.error-box {
+  background-color: #ffe0e0;
+  color: #b00020;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(255, 0, 0, 0.1);
+}
+
+/* ===========================================================
+   🧩 INLINE (YAN YANA) ALANLAR
+   =========================================================== */
+.inline-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.inline-input input {
+  flex: 1;
+  box-sizing: border-box;
+}
+
+/* ===========================================================
+   📋 LİSTELER (Kurullar, Tarihler, vb.)
+   =========================================================== */
+ul {
+  list-style: none;
+  padding-left: 10px;
+  color: #4b0082;
+  font-family: "Tinos", serif;
+}
+
+ul li {
+  margin: 3px 0;
+}
+
+/* ===========================================================
+   🕒 PROGRAM FORMU
+   =========================================================== */
+.program-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr auto;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.program-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.program-list li {
+  background: #f3ecff;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e0d6ff;
+}
+
+/* ===========================================================
+   ❌ SİL BUTONU
+   =========================================================== */
+.remove-btn {
+  background: #ff5252;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.remove-btn:hover {
+  background: #d62828;
+}
+
+/* ===========================================================
+   🏷️ SPONSOR LOGOLARI
+   =========================================================== */
+.sponsor-logos-preview {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.sponsor-logo-box {
+  background: #f3ecff;
+  border: 1px solid #e0d6ff;
+  border-radius: 10px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  width: 110px;
+}
+
+.sponsor-logo-box img {
+  max-width: 90px;
+  max-height: 60px;
+  object-fit: contain;
+}
+
+/* ===========================================================
+   💰 FİNANSAL SPONSORLAR
+   =========================================================== */
+.financial-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.financial-item {
+  background: #f3ecff;
+  border: 1px solid #e0d6ff;
+  border-radius: 10px;
+  padding: 8px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fin-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.fin-left img {
+  width: 55px;
+  height: 40px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 6px;
+}
+
+/* ===========================================================
+   🎓 EV SAHİBİ ÜNİVERSİTELER
+   =========================================================== */
+.host-logos-preview {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.host-logo-box {
+  background: #f0f8ff;
+  border: 1px solid #d6e9ff;
+  border-radius: 10px;
+  padding: 10px;
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.host-logo-box img {
+  max-width: 100px;
+  max-height: 70px;
+  object-fit: contain;
+}
+
+
+/* ✅ Başarı kutusu */
+.success-box {
+  background-color: #e9fce9;
+  color: #2e7d32;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 128, 0, 0.15);
+  border: 1px solid #a5d6a7;
+}
+
+
+
+/* 🚨 Alt kısımda sabit hata kutusu */
+.error-fixed {
+  position: fixed;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffe0e0;
+  color: #b00020;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(255, 0, 0, 0.15);
+  z-index: 9999;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 10px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+/* 🔸 Uyarı kutusu kaybolma animasyonu */
+.error-fixed.fade-out {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}

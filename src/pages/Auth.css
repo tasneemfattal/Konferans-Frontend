@@ -1,0 +1,95 @@
+.auth-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #a56efb, #d4b6ff, #f0e6ff);
+  font-family: "Poppins", sans-serif;
+}
+
+.auth-card {
+  display: flex;
+  width: 900px;
+  height: 520px; /* sabit yükseklik */
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* 🔸 sol ve sağ taraf eşit genişlik */
+.auth-left,
+.auth-right {
+  flex: 1;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* sol taraf */
+.auth-left {
+  background: linear-gradient(135deg, #8b5cf6, #c084fc);
+  color: white;
+  padding: 60px 50px;
+}
+
+/* sağ taraf */
+.auth-right {
+  background: white;
+  padding: 60px 50px;
+  text-align: center;
+}
+
+/* metinler */
+.auth-left h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+/* input ve buton stilleri */
+.auth-right input {
+  width: 100%;
+  padding: 12px 18px;
+  margin-bottom: 15px;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.auth-right input:focus {
+  outline: none;
+  border-color: #8b5cf6;
+  box-shadow: 0 0 5px rgba(139, 92, 246, 0.3);
+}
+
+.auth-right button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  background: linear-gradient(90deg, #8b5cf6, #c084fc);
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-right button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(139, 92, 246, 0.3);
+}
+
+/* alt metin */
+.switch-text {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.switch-text span {
+  color: #8b5cf6;
+  cursor: pointer;
+  font-weight: 600;
+}
